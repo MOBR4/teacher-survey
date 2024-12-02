@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+}
+body{
+    background-color: #C19191;
+    font-family: Tahoma, sans-serif;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  #survey-form{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 7em auto;
+    padding: 2em;
+    background-color: #FFFFFF;
+  }
+  
+  .form-header{
+    background-color: #8A5D5D;
+    color:#FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 0.5em;
+  }
+  .form-control{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 3em;
+    border-radius: 8px;
+    border: 1px solid #B8BDC9;
+    box-sizing: border-box;
+    background-color: #F0E9E9;
+    padding-left: 14px;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #name-label, #email-label, #number-label, #subject-label{
+    padding-top: 1.5em;
+  }
+
+  #concerns-label{
+    padding-top: 1.5em;
+  }
+
+  .legend-label{
+    margin-top: 1.5em;
+  }
+
+  #name-label{
+    margin-top: -10px;
+  }
+  
+  textarea{
+    padding-top: 1em;
+  }
+  
+  #submit{
+    background-color: #17BD5B;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 2em;
+    width: 100%;
+    border-radius: 8px;
+    min-height: 3em;
+  }
+
+  @media only screen and (max-width: 550px) {
+    #survey-form{
+      width: auto;
+      margin: 0;
+    }
+  }

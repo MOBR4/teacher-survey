@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Teacher Satisfaction Survey</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <form id="survey-form">
+      <!-- Title and description -->
+      <div class="form-header">
+        <h1 id="title">Teacher Satisfaction Survey</h1>
+        <p id="description">
+          <em>Thank you for taking the time to fill out this survey. Your feedback helps improve the quality of teaching.</em>
+        </p>
+      </div>
+    
+      <!-- Teacher rating section -->
+      <fieldset class="legend-label">
+        <legend class="legend-label">Rate the following aspects of your teacher:</legend>
+        
+        <label for="clarity">Clarity in teaching: 
+          <input type="number" id="clarity" name="clarity" min="1" max="5" class="form-control" placeholder="1 (Poor) - 5 (Excellent)" required>
+        </label>
+    
+        <label for="engagement">Ability to engage the class: 
+          <input type="number" id="engagement" name="engagement" min="1" max="5" class="form-control" placeholder="1 (Poor) - 5 (Excellent)" required>
+        </label>
+    
+        <label for="knowledge">Subject knowledge: 
+          <input type="number" id="knowledge" name="knowledge" min="1" max="5" class="form-control" placeholder="1 (Poor) - 5 (Excellent)" required>
+        </label>
+    
+        <label for="helpfulness">Willingness to assist students: 
+          <input type="number" id="helpfulness" name="helpfulness" min="1" max="5" class="form-control" placeholder="1 (Poor) - 5 (Excellent)" required>
+        </label>
+      </fieldset>
+    
+      <!-- Improvement suggestions section -->
+      <fieldset class="legend-label">
+        <legend class="legend-label">What improvements would you suggest for the teacher? <small>(Check all that apply)</small></legend>
+    
+        <label for="communication"><input type="checkbox" id="communication" name="improvements" value="communication" class="inline"> Communication skills</label>
+        <label for="engagement"><input type="checkbox" id="engagement" name="improvements" value="engagement" class="inline"> Class engagement</label>
+        <label for="materials"><input type="checkbox" id="materials" name="improvements" value="materials" class="inline"> Use of teaching materials</label>
+        <label for="assignments"><input type="checkbox" id="assignments" name="improvements" value="assignments" class="inline"> Quality of assignments</label>
+        <label for="punctuality"><input type="checkbox" id="punctuality" name="improvements" value="punctuality" class="inline"> Punctuality</label>
+      </fieldset>
+    
+      <!-- Additional feedback -->
+      <fieldset class="legend-label">
+        <label for="feedback">Additional comments or suggestions: 
+          <textarea id="feedback" name="feedback" rows="6" cols="30" class="form-control" placeholder="Your thoughts..." required></textarea>
+        </label>
+      </fieldset>
+    
+      <!-- Submit button -->
+      <input type="submit" id="submit" value="Submit">
+    </form>
+    
+  </body>
+</html>
